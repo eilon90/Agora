@@ -35,6 +35,6 @@ export class Inventory {
     }
 
     changePrice(name, price) {
-        this.items.find(i => i.name = name).price = price;
+        this.items.find(i => i.name === name).price = price;
     }
 }
